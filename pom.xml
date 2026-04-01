@@ -122,7 +122,19 @@
 					<mainClass>app.GUI</mainClass>
 				</configuration>
 			</plugin>
+<distributionManagement>
+    <repository>
+        <id>nexus-releases</id>
+        <name>Nexus Release Repository</name>
+        <url>http://3.25.165.164:8081/repository/maven-releases/</url>
+    </repository>
 
+    <snapshotRepository>
+        <id>nexus-snapshots</id>
+        <name>Nexus Snapshot Repository</name>
+        <url>http://3.25.165.164:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
 
 <!--			<plugin>-->
 <!--				<groupId>org.antlr</groupId>-->
